@@ -1,0 +1,26 @@
+use_default_settings: true
+
+general:
+  instance_name: "NexaSearch"
+  enable_metrics: false
+
+server:
+  port: 10000
+  bind_address: "0.0.0.0"
+  secret_key: "7bd265522202b07c7581ffb45e897726dd307a8ac35e3b39615802918ee6e713"
+  limiter: false
+  image_proxy: true
+
+search:
+  default_lang: "ru"
+  formats:
+    - html
+    - json
+
+ui:
+  static_use_hash: true
+  default_locale: "ru"
+
+outgoing:
+  request_timeout: 6.0
+  max_request_timeout: 10.0
